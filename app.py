@@ -4,6 +4,3 @@ app = Flask(__name__)
 def top():
     return "Kazu"
 app.run(host="0.0.0.0")
-git add .
-git commit -m "message"
-git push
