@@ -16,4 +16,4 @@ def kazu():
 def news():
     return render_template("news.html")
 
-app.run(host="0.0.0.0")
+app.run(host="0.0.0.0", debug=True)
