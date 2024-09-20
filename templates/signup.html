@@ -52,121 +52,125 @@
             </div>
           </nav>
         <h1>アカウント登録</h1>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1"
-                class="form-label">ニックネーム</label>
-            <input type="email" class="form-control"
-                id="exampleFormControlInput1" placeholder="tarou__tanaka">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1"
-                class="form-label">名前（本名）</label>
-            <input type="email" class="form-control"
-                id="exampleFormControlInput1" placeholder="（例）田中太郎">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1"
-                class="form-label">パスワード</label>
-            <input type="password" class="form-control"
-                id="exampleFormControlInput1" placeholder="（例）tanaka0101">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1"
-                class="form-label">メールアドレス（任意）</label>
-            <input type="email" class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="（例）takakatarou@NCAPP.com">
-        </div>
-        <div class="mb-3">
-            <select class="form-select" aria-label="Default select example">
-                <option selected>都道府県を選んでください</option>
-                <option value="1">北海道</option>
-                <option value="2">青森</option>
-                <option value="3">岩手</option>
-            </select>
-        </div>
-        <div class="mb-1">
-            <label for="exampleFormControlInput1"
-                class="form-label">好きな分類</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value
-                id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-                社会
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value
-                id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-                気象
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value
-                id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-                Checked checkbox
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value
-                id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-                社会
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value
-                id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-                社会
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value
-                id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-                社会
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value
-                id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-                社会
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value
-                id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-                社会
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value
-                id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-                社会
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value
-                id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-                社会
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value
-                id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-                社会
-            </label>
-        </div>
-        <a class="btn btn-primary" href="/news">今月のニュースへ</a>
+        <form action="/create-user" method="post">
+            <div class="mb-3">
+                <label for="nickname"
+                    class="form-label">ニックネーム</label>
+                <input name="nickname" type= "text" class="form-control"
+                    id="nickname" placeholder="tarou__tanaka" required>
+            </div>
+            <div class="mb-3">
+                <label for="name"
+                    class="form-label">名前（本名）</label>
+                <input name="name" type="text" class="form-control"
+                    id="name" placeholder="（例）田中太郎">
+            </div>
+            <div class="mb-3">
+                <label for="password"
+                    class="form-label">パスワード</label>
+                <input name="password" type="password" class="form-control"
+                    id="password" placeholder="（例）tanaka0101">
+            </div>
+            <div class="mb-3">
+                <label for="email"
+                    class="form-label">メールアドレス（任意）</label>
+                <input name="email" type="email" class="form-control"
+                    id="email"
+                    placeholder="（例）takakatarou@NCAPP.com">
+            </div>
+            <div class="mb-3">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>都道府県を選んでください</option>
+                    <option value="1">北海道</option>
+                    <option value="2">青森</option>
+                    <option value="3">岩手</option>
+                </select>
+            </div>
+            <div class="mb-1">
+                <label for="exampleFormControlInput1"
+                    class="form-label">好きな分類</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value
+                    id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    社会
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value
+                    id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    気象
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value
+                    id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value
+                    id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    社会
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value
+                    id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    社会
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value
+                    id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    社会
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value
+                    id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    社会
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value
+                    id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    社会
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value
+                    id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    社会
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value
+                    id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    社会
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value
+                    id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    社会
+                </label>
+            </div>
+            <button type="submit" class="btn btn-info">アカウント作成</button>
+            <a class="btn btn-primary" href="/news">今月のニュースへ</a>
+        </form>
+
     </body>
 </html>
 社会 · 気象・災害 · 科学・文化 · 政治 · ビジネス · 国際 · スポーツ · 暮らし · 新着 · 天気 · 動画 · 特集
