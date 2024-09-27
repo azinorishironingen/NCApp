@@ -10,15 +10,24 @@ app = Flask(__name__)
 
 @app.route("/")
 def top():
-    return str(datetime.datetime.now())
+    return redirect("/user-register")
 
-@app.route("/kazu")
+@app.route("/user-register")
 def kazu():
     return render_template("signup.html")
 
 @app.route("/news")
 def news():
     return render_template("news.html")
+
+@app.route("/home")
+def home():
+    return render_template("home.html")
+
+@app.route("/otanosimi")
+def otanosimi():
+    return render_template("otanosimi.html")
+
 
 @app.route("/create-user", methods=["POST"])
 def create_user():
