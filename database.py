@@ -14,11 +14,18 @@ class User(Model):
     name = CharField()
     password = CharField()
     email = CharField()
-        
+    birthplace = CharField()
+    interest = CharField()
+
     class Meta:
         database = db # This model uses the "people.db" database.
-db.create_tables([Person, User])
-Person.create(name="かずのり" , gender="男性" , age=11)
-Person.create(name="あおい" , gender="女性" , age=13)
-Person.create(name="たいき" , gender="男性" , age=4)
-Person.create(name="せいいちろう" , gender="男性" , age=2)
+
+class Anniversary (Model):
+    date = DateField()
+    name = CharField()
+    description = CharField()
+
+    class Meta:
+        database = db # This model uses the "people.db" database.
+
+db.create_tables([Person, User, Anniversary])

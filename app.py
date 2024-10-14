@@ -35,12 +35,16 @@ def create_user():
     name = request.form["name"]
     password = request.form["password"]
     email = request.form["email"]
+    birthplace = request.form["birthplace"]
+    interest = request.form.getlist("interest")
     print(nickname, name, password, email)
     User.create(
         nickname=nickname,
         name=name,
         password=password,
         email=email,
+        birthplace=birthplace,
+        interest=interest,
     )
     return redirect("/news")
 app.run(host="0.0.0.0", debug=True)

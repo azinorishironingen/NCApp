@@ -15,7 +15,25 @@
             crossorigin="anonymous"></script>
     </head>
     <body>
-
+        <nav class="bg-info navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">NCAPP
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <h1 class="m-4">アカウント登録</h1>
         <form action="/create-user" method="post" class="m-4">
             <div class="mb-3">
@@ -44,7 +62,7 @@
                     placeholder="（例）takakatarou@NCAPP.com">
             </div>
             <div class="mb-3">
-                <select class="form-select" aria-label="Default select example">
+                <select name="birthplace" class="form-select" aria-label="Default select example">
                     <option selected>出身地を選んでください</option>
                     <option value="1">北海道</option>
                     <option value="2">青森</option>
@@ -100,70 +118,69 @@
                     class="form-label">好きな分類</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value
+                <input name="interest" class="form-check-input" type="checkbox" value="1"
                     id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                     社会
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value
-                    id="flexCheckChecked">
+                <input name="interest" class="form-check-input" type="checkbox" value="2"                    id="flexCheckChecked">
                 <label class="form-check-label" for="flexCheckChecked">
                     気象
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value
+                <input name="interest" class="form-check-input" type="checkbox" value="3"
                     id="flexCheckChecked">
                 <label class="form-check-label" for="flexCheckChecked">
                     災害
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value
+                <input name="interest" class="form-check-input" type="checkbox" value="4"
                     id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                     科学
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value
+                <input name="interest" class="form-check-input" type="checkbox" value="5"
                     id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                     文化
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value
+                <input name="interest" class="form-check-input" type="checkbox" value="6"
                     id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                     政治
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value
+                <input name="interest" class="form-check-input" type="checkbox" value="7"
                     id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                     ビジネス
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value
+                <input name="interest" class="form-check-input" type="checkbox" value="8"
                     id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                     国際
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value
+                <input name="interest" class="form-check-input" type="checkbox" value="9"
                     id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                     スポーツ
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value
+                <input name="interest" class="form-check-input" type="checkbox" value="10"
                     id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                     暮らし
